@@ -1,0 +1,1425 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA169776209B05A700237589 /* MemoryConst.m in Sources */ = {isa = PBXBuildFile; fileRef = DA169775209B05A700237589 /* MemoryConst.m */; };
+		DA16977C209B077600237589 /* NSObject的mm文件源码.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA169779209B077600237589 /* NSObject的mm文件源码.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DA16977D209B077600237589 /* MemoryManagementVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA16977A209B077600237589 /* MemoryManagementVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DA17AC1720A02F3100F0A6D3 /* AutoReleaseMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC0A20A02F3100F0A6D3 /* AutoReleaseMemoryViewController.m */; };
+		DA17AC1820A02F3100F0A6D3 /* ARCAutoReleaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC0C20A02F3100F0A6D3 /* ARCAutoReleaseViewController.m */; };
+		DA17AC1920A02F3100F0A6D3 /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC0F20A02F3100F0A6D3 /* NSObject+Category.m */; };
+		DA17AC1A20A02F3100F0A6D3 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC1220A02F3100F0A6D3 /* Animal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DA17AC1B20A02F3100F0A6D3 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC1420A02F3100F0A6D3 /* Person.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DA17AC1C20A02F3100F0A6D3 /* MRCAutoReleaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC1620A02F3100F0A6D3 /* MRCAutoReleaseViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DA17AC2720A0304800F0A6D3 /* ReferenceCountVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC2620A0304800F0A6D3 /* ReferenceCountVC.m */; };
+		DA17AC2A20A0306400F0A6D3 /* AttributesCompareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC2920A0306400F0A6D3 /* AttributesCompareVC.m */; };
+		DA17AC2D20A0308F00F0A6D3 /* ARCOwnershipListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC2C20A0308F00F0A6D3 /* ARCOwnershipListVC.m */; };
+		DA17AC3020A030A800F0A6D3 /* ARCOwnershipAutoReleaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC2F20A030A800F0A6D3 /* ARCOwnershipAutoReleaseVC.m */; };
+		DA17AC3320A030C100F0A6D3 /* ARCOwnershipAutoStrongVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC3220A030C100F0A6D3 /* ARCOwnershipAutoStrongVC.m */; };
+		DA17AC3620A030D700F0A6D3 /* ARCOwnershipAutoWeakVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC3520A030D700F0A6D3 /* ARCOwnershipAutoWeakVC.m */; };
+		DA17AC3920A030F900F0A6D3 /* ARCOwnershipAutoUnRetainedVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC3820A030F900F0A6D3 /* ARCOwnershipAutoUnRetainedVC.m */; };
+		DA17AC4420A041CB00F0A6D3 /* BlockSyntaxVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC4320A041CB00F0A6D3 /* BlockSyntaxVC.m */; };
+		DA17AC4720A0420A00F0A6D3 /* InterceptedVariableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC4620A0420A00F0A6D3 /* InterceptedVariableVC.m */; };
+		DA17AC4B20A0427200F0A6D3 /* InterceptedObjectsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC4A20A0427200F0A6D3 /* InterceptedObjectsVC.m */; };
+		DA17AC4E20A042B200F0A6D3 /* MyClazz.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC4D20A042B200F0A6D3 /* MyClazz.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DA17AC5120A0433000F0A6D3 /* InterceptedObjectsMRCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC5020A0433000F0A6D3 /* InterceptedObjectsMRCVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DA17AC5420A0444000F0A6D3 /* BlockAchieveVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC5320A0444000F0A6D3 /* BlockAchieveVC.m */; };
+		DA17AC5720A044C700F0A6D3 /* BlockVariableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC5620A044C700F0A6D3 /* BlockVariableVC.m */; };
+		DA17AC5C20A0460400F0A6D3 /* BlockStorageMRCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC5B20A0460400F0A6D3 /* BlockStorageMRCVC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DA17AC5F20A0482F00F0A6D3 /* BlockStorageARCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC5E20A0482F00F0A6D3 /* BlockStorageARCVC.m */; };
+		DA17AC6A20A04AEE00F0A6D3 /* ExampleBlockMRCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC6920A04AEE00F0A6D3 /* ExampleBlockMRCVC.m */; };
+		DA17AC6D20A04B2200F0A6D3 /* ExampleBlockARCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA17AC6C20A04B2200F0A6D3 /* ExampleBlockARCVC.m */; };
+		DA40931B20946B4A00E19591 /* HighCopyAutorealeasePool.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA40930A20946B4A00E19591 /* HighCopyAutorealeasePool.mm */; };
+		DA40931D20946B4A00E19591 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA40930F20946B4A00E19591 /* Assets.xcassets */; };
+		DA40932020946B4A00E19591 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA40931620946B4A00E19591 /* main.m */; };
+		DA40932220946B4A00E19591 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA40931820946B4A00E19591 /* AppDelegate.m */; };
+		DA40932320946B4A00E19591 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = DA40931920946B4A00E19591 /* Dog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DA40932F20946D0C00E19591 /* DemoNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA40932E20946D0C00E19591 /* DemoNavigationController.m */; };
+		DA40933220946D4000E19591 /* DemoListTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA40933120946D4000E19591 /* DemoListTableVC.m */; };
+		DA40933620946DB100E19591 /* DemoConfigurationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA40933520946DB100E19591 /* DemoConfigurationModel.m */; };
+		DA4093392094706500E19591 /* WaterRippleView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4093372094706400E19591 /* WaterRippleView.m */; };
+		DA4093402094795E00E19591 /* MemoryManagementRulesController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA40933F2094795E00E19591 /* MemoryManagementRulesController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DA468D8E20B653A500DC649F /* TestSwiftSwipeTableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA468D8D20B653A500DC649F /* TestSwiftSwipeTableViewVC.swift */; };
+		DA49AD5E20C663E800E13030 /* UIScrollView+WJFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = DA49AD5D20C663E800E13030 /* UIScrollView+WJFrame.m */; };
+		DA49AD6520C67A6600E13030 /* EditNameOrNicknameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA49AD6320C67A6600E13030 /* EditNameOrNicknameVC.xib */; };
+		DA49AD6620C67A6600E13030 /* EditNameOrNicknameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA49AD6420C67A6600E13030 /* EditNameOrNicknameVC.swift */; };
+		DA54923F20BD2FF100E433DB /* WJBaseMoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54923E20BD2FF100E433DB /* WJBaseMoveView.swift */; };
+		DA55826620BBA8EE0016EE0C /* WJDynamicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55826520BBA8EE0016EE0C /* WJDynamicItem.swift */; };
+		DA55A86D20AD19D00044ED5A /* StartupPerformanceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA55A86C20AD19D00044ED5A /* StartupPerformanceVC.m */; };
+		DA56396E20AAADF500CAD610 /* InteractionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA56396520AAADF300CAD610 /* InteractionVC.swift */; };
+		DA56396F20AAADF500CAD610 /* TestCallBackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA56396620AAADF300CAD610 /* TestCallBackVC.swift */; };
+		DA56397020AAADF500CAD610 /* UnownedAndWeakVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA56396720AAADF400CAD610 /* UnownedAndWeakVC.swift */; };
+		DA56397120AAADF500CAD610 /* ClosureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA56396820AAADF400CAD610 /* ClosureVC.swift */; };
+		DA56397220AAADF500CAD610 /* ShowSwiftDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA56396920AAADF400CAD610 /* ShowSwiftDataVC.swift */; };
+		DA56397320AAADF500CAD610 /* ShowAllVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA56396A20AAADF400CAD610 /* ShowAllVC.swift */; };
+		DA56397420AAADF500CAD610 /* ShowSwiftDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA56396B20AAADF400CAD610 /* ShowSwiftDataCell.xib */; };
+		DA56397520AAADF500CAD610 /* ShowSwiftDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA56396C20AAADF500CAD610 /* ShowSwiftDataCell.swift */; };
+		DA593E1920A45110000DE345 /* suipianhua.png in Resources */ = {isa = PBXBuildFile; fileRef = DA593E1320A45110000DE345 /* suipianhua.png */; };
+		DA593E1A20A45110000DE345 /* 内存管理-引用计数.xmind in Resources */ = {isa = PBXBuildFile; fileRef = DA593E1420A45110000DE345 /* 内存管理-引用计数.xmind */; };
+		DA593E1B20A45110000DE345 /* ShowMemory.png in Resources */ = {isa = PBXBuildFile; fileRef = DA593E1520A45110000DE345 /* ShowMemory.png */; };
+		DA593E1C20A45110000DE345 /* yinyongjishubiao.png in Resources */ = {isa = PBXBuildFile; fileRef = DA593E1620A45110000DE345 /* yinyongjishubiao.png */; };
+		DA593E1D20A45110000DE345 /* autoreleaseReturnValue.png in Resources */ = {isa = PBXBuildFile; fileRef = DA593E1720A45110000DE345 /* autoreleaseReturnValue.png */; };
+		DA593E1E20A45110000DE345 /* 内存管理.xmind in Resources */ = {isa = PBXBuildFile; fileRef = DA593E1820A45110000DE345 /* 内存管理.xmind */; };
+		DA5AABCD230A7C8000925A7C /* UILabel+WJFastUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5AABC4230A7C8000925A7C /* UILabel+WJFastUIKit.m */; };
+		DA5AABCE230A7C8000925A7C /* WJCycleTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5AABC8230A7C8000925A7C /* WJCycleTableView.m */; };
+		DA5AABCF230A7C8000925A7C /* UIView+WJFastUIKit.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5AABC9230A7C8000925A7C /* UIView+WJFastUIKit.m */; };
+		DA5AABD0230A7C8000925A7C /* WJCycleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5AABCC230A7C8000925A7C /* WJCycleCell.m */; };
+		DA5AABD5230A7D9E00925A7C /* NSMutableArray+WJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5AABD2230A7D9C00925A7C /* NSMutableArray+WJExtension.m */; };
+		DA5AABD6230A7D9E00925A7C /* NSMutableDictionary+WJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5AABD3230A7D9D00925A7C /* NSMutableDictionary+WJExtension.m */; };
+		DA5AABD9230AADC800925A7C /* NSArray+WJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5AABD8230AADC800925A7C /* NSArray+WJExtension.m */; };
+		DA5AABDC230BDD2400925A7C /* WJCycleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5AABDB230BDD2400925A7C /* WJCycleTableViewController.m */; };
+		DA67AB9220BE7DA1007CEF0B /* TestRuntimeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA67AB9120BE7DA1007CEF0B /* TestRuntimeVC.m */; };
+		DA67AB9820BE7EDF007CEF0B /* NSObject+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = DA67AB9720BE7EDF007CEF0B /* NSObject+runtime.m */; };
+		DA6AD26C20C51AE30039E840 /* UIScrollView+WJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6AD26B20C51AE30039E840 /* UIScrollView+WJRefresh.m */; };
+		DA6AD26F20C51B100039E840 /* WJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6AD26E20C51B100039E840 /* WJRefreshHeader.m */; };
+		DA6AD27320C53F230039E840 /* UIView+WJFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6AD27220C53F230039E840 /* UIView+WJFrame.m */; };
+		DA74ECA020874A9B007A9D50 /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA74EC9F20874A9B007A9D50 /* ______Tests.m */; };
+		DA74ECAB20874A9B007A9D50 /* ______UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA74ECAA20874A9B007A9D50 /* ______UITests.m */; };
+		DA81FAF120AE710700341EB2 /* SwipeTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81FAE720AE710700341EB2 /* SwipeTableView.m */; };
+		DA81FAF220AE710700341EB2 /* UIView+STFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81FAEA20AE710700341EB2 /* UIView+STFrame.m */; };
+		DA81FAF420AE710700341EB2 /* STCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81FAEC20AE710700341EB2 /* STCollectionView.m */; };
+		DA81FAF520AE710700341EB2 /* STHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81FAED20AE710700341EB2 /* STHeaderView.m */; };
+		DA81FB3B20AE783F00341EB2 /* TestSwipeTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81FB2720AE768500341EB2 /* TestSwipeTableViewVC.m */; };
+		DA81FB3C20AE783F00341EB2 /* STViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81FB3520AE768600341EB2 /* STViewController.m */; };
+		DA81FB3D20AE783F00341EB2 /* STListController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81FB3620AE768600341EB2 /* STListController.m */; };
+		DA81FB3E20AE783F00341EB2 /* STImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81FB3720AE768600341EB2 /* STImageController.m */; };
+		DA81FB3F20AE783F00341EB2 /* UIScrollView+STRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81FB2D20AE768500341EB2 /* UIScrollView+STRefresh.m */; };
+		DA81FB4020AE783F00341EB2 /* STRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81FB2E20AE768500341EB2 /* STRefreshHeader.m */; };
+		DA81FB4120AE783F00341EB2 /* STTransitions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81FB2A20AE768500341EB2 /* STTransitions.m */; };
+		DA81FB4220AE783F00341EB2 /* CustomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81FB2120AE768500341EB2 /* CustomTableView.m */; };
+		DA81FB4320AE783F00341EB2 /* CustomSegmentControl.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81FB2420AE768500341EB2 /* CustomSegmentControl.m */; };
+		DA81FB4420AE783F00341EB2 /* CustomCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA81FB2520AE768500341EB2 /* CustomCollectionView.m */; };
+		DA81FB4D20AEA82400341EB2 /* WJSwipeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA81FB4C20AEA82400341EB2 /* WJSwipeTableView.swift */; };
+		DA81FB4F20AEA83100341EB2 /* WJHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA81FB4E20AEA83100341EB2 /* WJHeaderView.swift */; };
+		DA81FB5320AEC92700341EB2 /* WJSegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA81FB5220AEC92700341EB2 /* WJSegmentView.swift */; };
+		DA83C91B20C13AE900D9141A /* EndScrollViewTool.m in Sources */ = {isa = PBXBuildFile; fileRef = DA83C91A20C13AE900D9141A /* EndScrollViewTool.m */; };
+		DA8D11732099881E009D9FC8 /* ShowAboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8D11722099881E009D9FC8 /* ShowAboutVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DA74EC9C20874A9B007A9D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA74EC7B20874A98007A9D50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA74EC8220874A98007A9D50;
+			remoteInfo = "内存管理实例";
+		};
+		DA74ECA720874A9B007A9D50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DA74EC7B20874A98007A9D50 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA74EC8220874A98007A9D50;
+			remoteInfo = "内存管理实例";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA16976D209AF12100237589 /* Memory-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Memory-Prefix.pch"; sourceTree = "<group>"; };
+		DA169774209B05A700237589 /* MemoryConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryConst.h; sourceTree = "<group>"; };
+		DA169775209B05A700237589 /* MemoryConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryConst.m; sourceTree = "<group>"; };
+		DA169777209B068500237589 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		DA169778209B077600237589 /* NSObject的mm文件源码.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject的mm文件源码.h"; sourceTree = "<group>"; };
+		DA169779209B077600237589 /* NSObject的mm文件源码.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSObject的mm文件源码.mm"; sourceTree = "<group>"; };
+		DA16977A209B077600237589 /* MemoryManagementVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryManagementVC.m; sourceTree = "<group>"; };
+		DA16977B209B077600237589 /* MemoryManagementVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryManagementVC.h; sourceTree = "<group>"; };
+		DA17AC0920A02F3100F0A6D3 /* AutoReleaseMemoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoReleaseMemoryViewController.h; sourceTree = "<group>"; };
+		DA17AC0A20A02F3100F0A6D3 /* AutoReleaseMemoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoReleaseMemoryViewController.m; sourceTree = "<group>"; };
+		DA17AC0C20A02F3100F0A6D3 /* ARCAutoReleaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCAutoReleaseViewController.m; sourceTree = "<group>"; };
+		DA17AC0D20A02F3100F0A6D3 /* NSObject+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
+		DA17AC0E20A02F3100F0A6D3 /* ARCAutoReleaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCAutoReleaseViewController.h; sourceTree = "<group>"; };
+		DA17AC0F20A02F3100F0A6D3 /* NSObject+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
+		DA17AC1120A02F3100F0A6D3 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		DA17AC1220A02F3100F0A6D3 /* Animal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		DA17AC1320A02F3100F0A6D3 /* MRCAutoReleaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCAutoReleaseViewController.h; sourceTree = "<group>"; };
+		DA17AC1420A02F3100F0A6D3 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		DA17AC1520A02F3100F0A6D3 /* Animal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		DA17AC1620A02F3100F0A6D3 /* MRCAutoReleaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCAutoReleaseViewController.m; sourceTree = "<group>"; };
+		DA17AC2520A0304800F0A6D3 /* ReferenceCountVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReferenceCountVC.h; sourceTree = "<group>"; };
+		DA17AC2620A0304800F0A6D3 /* ReferenceCountVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReferenceCountVC.m; sourceTree = "<group>"; };
+		DA17AC2820A0306400F0A6D3 /* AttributesCompareVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributesCompareVC.h; sourceTree = "<group>"; };
+		DA17AC2920A0306400F0A6D3 /* AttributesCompareVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributesCompareVC.m; sourceTree = "<group>"; };
+		DA17AC2B20A0308F00F0A6D3 /* ARCOwnershipListVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCOwnershipListVC.h; sourceTree = "<group>"; };
+		DA17AC2C20A0308F00F0A6D3 /* ARCOwnershipListVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCOwnershipListVC.m; sourceTree = "<group>"; };
+		DA17AC2E20A030A800F0A6D3 /* ARCOwnershipAutoReleaseVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCOwnershipAutoReleaseVC.h; sourceTree = "<group>"; };
+		DA17AC2F20A030A800F0A6D3 /* ARCOwnershipAutoReleaseVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCOwnershipAutoReleaseVC.m; sourceTree = "<group>"; };
+		DA17AC3120A030C100F0A6D3 /* ARCOwnershipAutoStrongVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCOwnershipAutoStrongVC.h; sourceTree = "<group>"; };
+		DA17AC3220A030C100F0A6D3 /* ARCOwnershipAutoStrongVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCOwnershipAutoStrongVC.m; sourceTree = "<group>"; };
+		DA17AC3420A030D700F0A6D3 /* ARCOwnershipAutoWeakVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCOwnershipAutoWeakVC.h; sourceTree = "<group>"; };
+		DA17AC3520A030D700F0A6D3 /* ARCOwnershipAutoWeakVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCOwnershipAutoWeakVC.m; sourceTree = "<group>"; };
+		DA17AC3720A030F900F0A6D3 /* ARCOwnershipAutoUnRetainedVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCOwnershipAutoUnRetainedVC.h; sourceTree = "<group>"; };
+		DA17AC3820A030F900F0A6D3 /* ARCOwnershipAutoUnRetainedVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCOwnershipAutoUnRetainedVC.m; sourceTree = "<group>"; };
+		DA17AC4220A041CB00F0A6D3 /* BlockSyntaxVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockSyntaxVC.h; sourceTree = "<group>"; };
+		DA17AC4320A041CB00F0A6D3 /* BlockSyntaxVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockSyntaxVC.m; sourceTree = "<group>"; };
+		DA17AC4520A0420A00F0A6D3 /* InterceptedVariableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedVariableVC.h; sourceTree = "<group>"; };
+		DA17AC4620A0420A00F0A6D3 /* InterceptedVariableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterceptedVariableVC.m; sourceTree = "<group>"; };
+		DA17AC4920A0427200F0A6D3 /* InterceptedObjectsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedObjectsVC.h; sourceTree = "<group>"; };
+		DA17AC4A20A0427200F0A6D3 /* InterceptedObjectsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterceptedObjectsVC.m; sourceTree = "<group>"; };
+		DA17AC4C20A042B200F0A6D3 /* MyClazz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyClazz.h; sourceTree = "<group>"; };
+		DA17AC4D20A042B200F0A6D3 /* MyClazz.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyClazz.m; sourceTree = "<group>"; };
+		DA17AC4F20A0433000F0A6D3 /* InterceptedObjectsMRCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedObjectsMRCVC.h; sourceTree = "<group>"; };
+		DA17AC5020A0433000F0A6D3 /* InterceptedObjectsMRCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterceptedObjectsMRCVC.m; sourceTree = "<group>"; };
+		DA17AC5220A0444000F0A6D3 /* BlockAchieveVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockAchieveVC.h; sourceTree = "<group>"; };
+		DA17AC5320A0444000F0A6D3 /* BlockAchieveVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockAchieveVC.m; sourceTree = "<group>"; };
+		DA17AC5520A044C700F0A6D3 /* BlockVariableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockVariableVC.h; sourceTree = "<group>"; };
+		DA17AC5620A044C700F0A6D3 /* BlockVariableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockVariableVC.m; sourceTree = "<group>"; };
+		DA17AC5A20A0460400F0A6D3 /* BlockStorageMRCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockStorageMRCVC.h; sourceTree = "<group>"; };
+		DA17AC5B20A0460400F0A6D3 /* BlockStorageMRCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStorageMRCVC.m; sourceTree = "<group>"; };
+		DA17AC5D20A0482F00F0A6D3 /* BlockStorageARCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockStorageARCVC.h; sourceTree = "<group>"; };
+		DA17AC5E20A0482F00F0A6D3 /* BlockStorageARCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStorageARCVC.m; sourceTree = "<group>"; };
+		DA17AC6820A04AEE00F0A6D3 /* ExampleBlockMRCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleBlockMRCVC.h; sourceTree = "<group>"; };
+		DA17AC6920A04AEE00F0A6D3 /* ExampleBlockMRCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleBlockMRCVC.m; sourceTree = "<group>"; };
+		DA17AC6B20A04B2200F0A6D3 /* ExampleBlockARCVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleBlockARCVC.h; sourceTree = "<group>"; };
+		DA17AC6C20A04B2200F0A6D3 /* ExampleBlockARCVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleBlockARCVC.m; sourceTree = "<group>"; };
+		DA40930A20946B4A00E19591 /* HighCopyAutorealeasePool.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HighCopyAutorealeasePool.mm; sourceTree = "<group>"; };
+		DA40930B20946B4A00E19591 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DA40930E20946B4A00E19591 /* Dog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		DA40930F20946B4A00E19591 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DA40931420946B4A00E19591 /* HighCopyAutorealeasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighCopyAutorealeasePool.h; sourceTree = "<group>"; };
+		DA40931620946B4A00E19591 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA40931820946B4A00E19591 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DA40931920946B4A00E19591 /* Dog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
+		DA40931A20946B4A00E19591 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA40932D20946D0C00E19591 /* DemoNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoNavigationController.h; sourceTree = "<group>"; };
+		DA40932E20946D0C00E19591 /* DemoNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoNavigationController.m; sourceTree = "<group>"; };
+		DA40933020946D4000E19591 /* DemoListTableVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoListTableVC.h; sourceTree = "<group>"; };
+		DA40933120946D4000E19591 /* DemoListTableVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoListTableVC.m; sourceTree = "<group>"; };
+		DA40933420946DB100E19591 /* DemoConfigurationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoConfigurationModel.h; sourceTree = "<group>"; };
+		DA40933520946DB100E19591 /* DemoConfigurationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoConfigurationModel.m; sourceTree = "<group>"; };
+		DA4093372094706400E19591 /* WaterRippleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterRippleView.m; sourceTree = "<group>"; };
+		DA4093382094706500E19591 /* WaterRippleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterRippleView.h; sourceTree = "<group>"; };
+		DA40933E2094795E00E19591 /* MemoryManagementRulesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemoryManagementRulesController.h; sourceTree = "<group>"; };
+		DA40933F2094795E00E19591 /* MemoryManagementRulesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryManagementRulesController.m; sourceTree = "<group>"; };
+		DA468D8D20B653A500DC649F /* TestSwiftSwipeTableViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSwiftSwipeTableViewVC.swift; sourceTree = "<group>"; };
+		DA49AD5C20C663E800E13030 /* UIScrollView+WJFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+WJFrame.h"; sourceTree = "<group>"; };
+		DA49AD5D20C663E800E13030 /* UIScrollView+WJFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+WJFrame.m"; sourceTree = "<group>"; };
+		DA49AD6320C67A6600E13030 /* EditNameOrNicknameVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditNameOrNicknameVC.xib; sourceTree = "<group>"; };
+		DA49AD6420C67A6600E13030 /* EditNameOrNicknameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditNameOrNicknameVC.swift; sourceTree = "<group>"; };
+		DA54923E20BD2FF100E433DB /* WJBaseMoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WJBaseMoveView.swift; sourceTree = "<group>"; };
+		DA55826520BBA8EE0016EE0C /* WJDynamicItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WJDynamicItem.swift; sourceTree = "<group>"; };
+		DA55A86B20AD19D00044ED5A /* StartupPerformanceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StartupPerformanceVC.h; sourceTree = "<group>"; };
+		DA55A86C20AD19D00044ED5A /* StartupPerformanceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StartupPerformanceVC.m; sourceTree = "<group>"; };
+		DA56396520AAADF300CAD610 /* InteractionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractionVC.swift; sourceTree = "<group>"; };
+		DA56396620AAADF300CAD610 /* TestCallBackVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCallBackVC.swift; sourceTree = "<group>"; };
+		DA56396720AAADF400CAD610 /* UnownedAndWeakVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnownedAndWeakVC.swift; sourceTree = "<group>"; };
+		DA56396820AAADF400CAD610 /* ClosureVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosureVC.swift; sourceTree = "<group>"; };
+		DA56396920AAADF400CAD610 /* ShowSwiftDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSwiftDataVC.swift; sourceTree = "<group>"; };
+		DA56396A20AAADF400CAD610 /* ShowAllVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowAllVC.swift; sourceTree = "<group>"; };
+		DA56396B20AAADF400CAD610 /* ShowSwiftDataCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowSwiftDataCell.xib; sourceTree = "<group>"; };
+		DA56396C20AAADF500CAD610 /* ShowSwiftDataCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSwiftDataCell.swift; sourceTree = "<group>"; };
+		DA56396D20AAADF500CAD610 /* 内存管理实例-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "内存管理实例-Bridging-Header.h"; sourceTree = "<group>"; };
+		DA593E1320A45110000DE345 /* suipianhua.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suipianhua.png; sourceTree = "<group>"; };
+		DA593E1420A45110000DE345 /* 内存管理-引用计数.xmind */ = {isa = PBXFileReference; lastKnownFileType = file; path = "内存管理-引用计数.xmind"; sourceTree = "<group>"; };
+		DA593E1520A45110000DE345 /* ShowMemory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShowMemory.png; sourceTree = "<group>"; };
+		DA593E1620A45110000DE345 /* yinyongjishubiao.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yinyongjishubiao.png; sourceTree = "<group>"; };
+		DA593E1720A45110000DE345 /* autoreleaseReturnValue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = autoreleaseReturnValue.png; sourceTree = "<group>"; };
+		DA593E1820A45110000DE345 /* 内存管理.xmind */ = {isa = PBXFileReference; lastKnownFileType = file; path = "内存管理.xmind"; sourceTree = "<group>"; };
+		DA5AABC4230A7C8000925A7C /* UILabel+WJFastUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+WJFastUIKit.m"; sourceTree = "<group>"; };
+		DA5AABC5230A7C8000925A7C /* UIView+WJFastUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WJFastUIKit.h"; sourceTree = "<group>"; };
+		DA5AABC6230A7C8000925A7C /* WJFastUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJFastUIKit.h; sourceTree = "<group>"; };
+		DA5AABC7230A7C8000925A7C /* WJCycleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJCycleCell.h; sourceTree = "<group>"; };
+		DA5AABC8230A7C8000925A7C /* WJCycleTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCycleTableView.m; sourceTree = "<group>"; };
+		DA5AABC9230A7C8000925A7C /* UIView+WJFastUIKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WJFastUIKit.m"; sourceTree = "<group>"; };
+		DA5AABCA230A7C8000925A7C /* UILabel+WJFastUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+WJFastUIKit.h"; sourceTree = "<group>"; };
+		DA5AABCB230A7C8000925A7C /* WJCycleTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WJCycleTableView.h; sourceTree = "<group>"; };
+		DA5AABCC230A7C8000925A7C /* WJCycleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WJCycleCell.m; sourceTree = "<group>"; };
+		DA5AABD1230A7D9C00925A7C /* NSMutableDictionary+WJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+WJExtension.h"; sourceTree = "<group>"; };
+		DA5AABD2230A7D9C00925A7C /* NSMutableArray+WJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+WJExtension.m"; sourceTree = "<group>"; };
+		DA5AABD3230A7D9D00925A7C /* NSMutableDictionary+WJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+WJExtension.m"; sourceTree = "<group>"; };
+		DA5AABD4230A7D9E00925A7C /* NSMutableArray+WJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+WJExtension.h"; sourceTree = "<group>"; };
+		DA5AABD7230AADC800925A7C /* NSArray+WJExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+WJExtension.h"; sourceTree = "<group>"; };
+		DA5AABD8230AADC800925A7C /* NSArray+WJExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+WJExtension.m"; sourceTree = "<group>"; };
+		DA5AABDA230BDD2400925A7C /* WJCycleTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJCycleTableViewController.h; sourceTree = "<group>"; };
+		DA5AABDB230BDD2400925A7C /* WJCycleTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJCycleTableViewController.m; sourceTree = "<group>"; };
+		DA67AB9020BE7DA1007CEF0B /* TestRuntimeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestRuntimeVC.h; sourceTree = "<group>"; };
+		DA67AB9120BE7DA1007CEF0B /* TestRuntimeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestRuntimeVC.m; sourceTree = "<group>"; };
+		DA67AB9620BE7EDF007CEF0B /* NSObject+runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+runtime.h"; sourceTree = "<group>"; };
+		DA67AB9720BE7EDF007CEF0B /* NSObject+runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+runtime.m"; sourceTree = "<group>"; };
+		DA6AD26A20C51AE30039E840 /* UIScrollView+WJRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+WJRefresh.h"; sourceTree = "<group>"; };
+		DA6AD26B20C51AE30039E840 /* UIScrollView+WJRefresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+WJRefresh.m"; sourceTree = "<group>"; };
+		DA6AD26D20C51B100039E840 /* WJRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJRefreshHeader.h; sourceTree = "<group>"; };
+		DA6AD26E20C51B100039E840 /* WJRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WJRefreshHeader.m; sourceTree = "<group>"; };
+		DA6AD27020C51B400039E840 /* WJRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WJRefresh.h; sourceTree = "<group>"; };
+		DA6AD27120C53F230039E840 /* UIView+WJFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+WJFrame.h"; sourceTree = "<group>"; };
+		DA6AD27220C53F230039E840 /* UIView+WJFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+WJFrame.m"; sourceTree = "<group>"; };
+		DA74EC8320874A98007A9D50 /* 内存管理实例.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "内存管理实例.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA74EC9B20874A9B007A9D50 /* 内存管理实例Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "内存管理实例Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA74EC9F20874A9B007A9D50 /* ______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______Tests.m"; sourceTree = "<group>"; };
+		DA74ECA120874A9B007A9D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA74ECA620874A9B007A9D50 /* 内存管理实例UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "内存管理实例UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA74ECAA20874A9B007A9D50 /* ______UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______UITests.m"; sourceTree = "<group>"; };
+		DA74ECAC20874A9B007A9D50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA81FAE720AE710700341EB2 /* SwipeTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeTableView.m; sourceTree = "<group>"; };
+		DA81FAE820AE710700341EB2 /* STHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHeaderView.h; sourceTree = "<group>"; };
+		DA81FAE920AE710700341EB2 /* STCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STCollectionView.h; sourceTree = "<group>"; };
+		DA81FAEA20AE710700341EB2 /* UIView+STFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+STFrame.m"; sourceTree = "<group>"; };
+		DA81FAEC20AE710700341EB2 /* STCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STCollectionView.m; sourceTree = "<group>"; };
+		DA81FAED20AE710700341EB2 /* STHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHeaderView.m; sourceTree = "<group>"; };
+		DA81FAEE20AE710700341EB2 /* SwipeTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeTableView.h; sourceTree = "<group>"; };
+		DA81FAEF20AE710700341EB2 /* UIView+STFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+STFrame.h"; sourceTree = "<group>"; };
+		DA81FB2020AE768500341EB2 /* CustomSegmentControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomSegmentControl.h; sourceTree = "<group>"; };
+		DA81FB2120AE768500341EB2 /* CustomTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTableView.m; sourceTree = "<group>"; };
+		DA81FB2220AE768500341EB2 /* CustomCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomCollectionView.h; sourceTree = "<group>"; };
+		DA81FB2320AE768500341EB2 /* CustomTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTableView.h; sourceTree = "<group>"; };
+		DA81FB2420AE768500341EB2 /* CustomSegmentControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomSegmentControl.m; sourceTree = "<group>"; };
+		DA81FB2520AE768500341EB2 /* CustomCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomCollectionView.m; sourceTree = "<group>"; };
+		DA81FB2720AE768500341EB2 /* TestSwipeTableViewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestSwipeTableViewVC.m; sourceTree = "<group>"; };
+		DA81FB2820AE768500341EB2 /* TestSwipeTableViewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSwipeTableViewVC.h; sourceTree = "<group>"; };
+		DA81FB2A20AE768500341EB2 /* STTransitions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STTransitions.m; sourceTree = "<group>"; };
+		DA81FB2B20AE768500341EB2 /* STTransitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STTransitions.h; sourceTree = "<group>"; };
+		DA81FB2D20AE768500341EB2 /* UIScrollView+STRefresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+STRefresh.m"; sourceTree = "<group>"; };
+		DA81FB2E20AE768500341EB2 /* STRefreshHeader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STRefreshHeader.m; sourceTree = "<group>"; };
+		DA81FB2F20AE768500341EB2 /* STRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STRefresh.h; sourceTree = "<group>"; };
+		DA81FB3020AE768500341EB2 /* github.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = github.png; sourceTree = "<group>"; };
+		DA81FB3120AE768500341EB2 /* STRefreshHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STRefreshHeader.h; sourceTree = "<group>"; };
+		DA81FB3220AE768500341EB2 /* UIScrollView+STRefresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+STRefresh.h"; sourceTree = "<group>"; };
+		DA81FB3420AE768600341EB2 /* STImageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STImageController.h; sourceTree = "<group>"; };
+		DA81FB3520AE768600341EB2 /* STViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STViewController.m; sourceTree = "<group>"; };
+		DA81FB3620AE768600341EB2 /* STListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STListController.m; sourceTree = "<group>"; };
+		DA81FB3720AE768600341EB2 /* STImageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STImageController.m; sourceTree = "<group>"; };
+		DA81FB3820AE768600341EB2 /* STListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STListController.h; sourceTree = "<group>"; };
+		DA81FB3920AE768600341EB2 /* STViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STViewController.h; sourceTree = "<group>"; };
+		DA81FB4C20AEA82400341EB2 /* WJSwipeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WJSwipeTableView.swift; sourceTree = "<group>"; };
+		DA81FB4E20AEA83100341EB2 /* WJHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WJHeaderView.swift; sourceTree = "<group>"; };
+		DA81FB5220AEC92700341EB2 /* WJSegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WJSegmentView.swift; sourceTree = "<group>"; };
+		DA83C91920C13AE900D9141A /* EndScrollViewTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EndScrollViewTool.h; sourceTree = "<group>"; };
+		DA83C91A20C13AE900D9141A /* EndScrollViewTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EndScrollViewTool.m; sourceTree = "<group>"; };
+		DA8D11712099881E009D9FC8 /* ShowAboutVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShowAboutVC.h; sourceTree = "<group>"; };
+		DA8D11722099881E009D9FC8 /* ShowAboutVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShowAboutVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA74EC8020874A98007A9D50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA74EC9820874A9B007A9D50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA74ECA320874A9B007A9D50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA17AC0720A02F3100F0A6D3 /* 自动释放池探究 */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC0820A02F3100F0A6D3 /* 自动释放池内存 */,
+				DA17AC0B20A02F3100F0A6D3 /* ARC环境下研究autorealease */,
+				DA17AC1020A02F3100F0A6D3 /* MRC研究autorealease */,
+			);
+			path = "自动释放池探究";
+			sourceTree = "<group>";
+		};
+		DA17AC0820A02F3100F0A6D3 /* 自动释放池内存 */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC0920A02F3100F0A6D3 /* AutoReleaseMemoryViewController.h */,
+				DA17AC0A20A02F3100F0A6D3 /* AutoReleaseMemoryViewController.m */,
+			);
+			path = "自动释放池内存";
+			sourceTree = "<group>";
+		};
+		DA17AC0B20A02F3100F0A6D3 /* ARC环境下研究autorealease */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC0E20A02F3100F0A6D3 /* ARCAutoReleaseViewController.h */,
+				DA17AC0C20A02F3100F0A6D3 /* ARCAutoReleaseViewController.m */,
+				DA17AC0D20A02F3100F0A6D3 /* NSObject+Category.h */,
+				DA17AC0F20A02F3100F0A6D3 /* NSObject+Category.m */,
+			);
+			path = "ARC环境下研究autorealease";
+			sourceTree = "<group>";
+		};
+		DA17AC1020A02F3100F0A6D3 /* MRC研究autorealease */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC1120A02F3100F0A6D3 /* Person.h */,
+				DA17AC1420A02F3100F0A6D3 /* Person.m */,
+				DA17AC1520A02F3100F0A6D3 /* Animal.h */,
+				DA17AC1220A02F3100F0A6D3 /* Animal.m */,
+				DA17AC1320A02F3100F0A6D3 /* MRCAutoReleaseViewController.h */,
+				DA17AC1620A02F3100F0A6D3 /* MRCAutoReleaseViewController.m */,
+			);
+			path = "MRC研究autorealease";
+			sourceTree = "<group>";
+		};
+		DA17AC1D20A02FCC00F0A6D3 /*  ARC所有权修饰符研究 */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC2120A02FCC00F0A6D3 /* 所有权修饰符列表 */,
+				DA17AC1E20A02FCC00F0A6D3 /* autoreleasing */,
+				DA17AC1F20A02FCC00F0A6D3 /* strong */,
+				DA17AC2020A02FCC00F0A6D3 /* weak */,
+				DA17AC2220A02FCC00F0A6D3 /* unsafe_unretained */,
+			);
+			path = " ARC所有权修饰符研究";
+			sourceTree = "<group>";
+		};
+		DA17AC1E20A02FCC00F0A6D3 /* autoreleasing */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC2E20A030A800F0A6D3 /* ARCOwnershipAutoReleaseVC.h */,
+				DA17AC2F20A030A800F0A6D3 /* ARCOwnershipAutoReleaseVC.m */,
+			);
+			path = autoreleasing;
+			sourceTree = "<group>";
+		};
+		DA17AC1F20A02FCC00F0A6D3 /* strong */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC3120A030C100F0A6D3 /* ARCOwnershipAutoStrongVC.h */,
+				DA17AC3220A030C100F0A6D3 /* ARCOwnershipAutoStrongVC.m */,
+			);
+			path = strong;
+			sourceTree = "<group>";
+		};
+		DA17AC2020A02FCC00F0A6D3 /* weak */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC3420A030D700F0A6D3 /* ARCOwnershipAutoWeakVC.h */,
+				DA17AC3520A030D700F0A6D3 /* ARCOwnershipAutoWeakVC.m */,
+			);
+			path = weak;
+			sourceTree = "<group>";
+		};
+		DA17AC2120A02FCC00F0A6D3 /* 所有权修饰符列表 */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC2B20A0308F00F0A6D3 /* ARCOwnershipListVC.h */,
+				DA17AC2C20A0308F00F0A6D3 /* ARCOwnershipListVC.m */,
+			);
+			path = "所有权修饰符列表";
+			sourceTree = "<group>";
+		};
+		DA17AC2220A02FCC00F0A6D3 /* unsafe_unretained */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC3720A030F900F0A6D3 /* ARCOwnershipAutoUnRetainedVC.h */,
+				DA17AC3820A030F900F0A6D3 /* ARCOwnershipAutoUnRetainedVC.m */,
+			);
+			path = unsafe_unretained;
+			sourceTree = "<group>";
+		};
+		DA17AC2320A02FD500F0A6D3 /* 关键字比较 */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC2820A0306400F0A6D3 /* AttributesCompareVC.h */,
+				DA17AC2920A0306400F0A6D3 /* AttributesCompareVC.m */,
+			);
+			path = "关键字比较";
+			sourceTree = "<group>";
+		};
+		DA17AC2420A02FE200F0A6D3 /* 引用计数数值例题 */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC2520A0304800F0A6D3 /* ReferenceCountVC.h */,
+				DA17AC2620A0304800F0A6D3 /* ReferenceCountVC.m */,
+			);
+			path = "引用计数数值例题";
+			sourceTree = "<group>";
+		};
+		DA17AC3A20A0412100F0A6D3 /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC4820A0425800F0A6D3 /* 截获对象 */,
+				DA17AC3F20A041AE00F0A6D3 /* 截取变量 */,
+				DA17AC3B20A041AD00F0A6D3 /* Block_Copy对引用计数影响 */,
+				DA17AC3E20A041AD00F0A6D3 /* block变量存储区域和对象修饰符 */,
+				DA17AC3D20A041AD00F0A6D3 /* Block存储区域 */,
+				DA17AC4020A041AE00F0A6D3 /* Block例题 */,
+				DA17AC4120A041AE00F0A6D3 /* Block内部实现 */,
+				DA17AC3C20A041AD00F0A6D3 /* Block语法 */,
+			);
+			path = Blocks;
+			sourceTree = "<group>";
+		};
+		DA17AC3B20A041AD00F0A6D3 /* Block_Copy对引用计数影响 */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC4C20A042B200F0A6D3 /* MyClazz.h */,
+				DA17AC4D20A042B200F0A6D3 /* MyClazz.m */,
+				DA17AC4F20A0433000F0A6D3 /* InterceptedObjectsMRCVC.h */,
+				DA17AC5020A0433000F0A6D3 /* InterceptedObjectsMRCVC.m */,
+			);
+			path = "Block_Copy对引用计数影响";
+			sourceTree = "<group>";
+		};
+		DA17AC3C20A041AD00F0A6D3 /* Block语法 */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC4220A041CB00F0A6D3 /* BlockSyntaxVC.h */,
+				DA17AC4320A041CB00F0A6D3 /* BlockSyntaxVC.m */,
+			);
+			path = "Block语法";
+			sourceTree = "<group>";
+		};
+		DA17AC3D20A041AD00F0A6D3 /* Block存储区域 */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC5820A0456F00F0A6D3 /* ARC */,
+				DA17AC5920A0456F00F0A6D3 /* MRC */,
+			);
+			path = "Block存储区域";
+			sourceTree = "<group>";
+		};
+		DA17AC3E20A041AD00F0A6D3 /* block变量存储区域和对象修饰符 */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC5520A044C700F0A6D3 /* BlockVariableVC.h */,
+				DA17AC5620A044C700F0A6D3 /* BlockVariableVC.m */,
+			);
+			path = "block变量存储区域和对象修饰符";
+			sourceTree = "<group>";
+		};
+		DA17AC3F20A041AE00F0A6D3 /* 截取变量 */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC4520A0420A00F0A6D3 /* InterceptedVariableVC.h */,
+				DA17AC4620A0420A00F0A6D3 /* InterceptedVariableVC.m */,
+			);
+			path = "截取变量";
+			sourceTree = "<group>";
+		};
+		DA17AC4020A041AE00F0A6D3 /* Block例题 */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC6020A0495300F0A6D3 /* ARC */,
+				DA17AC6120A0495300F0A6D3 /* MRC */,
+			);
+			path = "Block例题";
+			sourceTree = "<group>";
+		};
+		DA17AC4120A041AE00F0A6D3 /* Block内部实现 */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC5220A0444000F0A6D3 /* BlockAchieveVC.h */,
+				DA17AC5320A0444000F0A6D3 /* BlockAchieveVC.m */,
+			);
+			path = "Block内部实现";
+			sourceTree = "<group>";
+		};
+		DA17AC4820A0425800F0A6D3 /* 截获对象 */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC4920A0427200F0A6D3 /* InterceptedObjectsVC.h */,
+				DA17AC4A20A0427200F0A6D3 /* InterceptedObjectsVC.m */,
+			);
+			path = "截获对象";
+			sourceTree = "<group>";
+		};
+		DA17AC5820A0456F00F0A6D3 /* ARC */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC5D20A0482F00F0A6D3 /* BlockStorageARCVC.h */,
+				DA17AC5E20A0482F00F0A6D3 /* BlockStorageARCVC.m */,
+			);
+			path = ARC;
+			sourceTree = "<group>";
+		};
+		DA17AC5920A0456F00F0A6D3 /* MRC */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC5A20A0460400F0A6D3 /* BlockStorageMRCVC.h */,
+				DA17AC5B20A0460400F0A6D3 /* BlockStorageMRCVC.m */,
+			);
+			path = MRC;
+			sourceTree = "<group>";
+		};
+		DA17AC6020A0495300F0A6D3 /* ARC */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC6B20A04B2200F0A6D3 /* ExampleBlockARCVC.h */,
+				DA17AC6C20A04B2200F0A6D3 /* ExampleBlockARCVC.m */,
+			);
+			path = ARC;
+			sourceTree = "<group>";
+		};
+		DA17AC6120A0495300F0A6D3 /* MRC */ = {
+			isa = PBXGroup;
+			children = (
+				DA17AC6820A04AEE00F0A6D3 /* ExampleBlockMRCVC.h */,
+				DA17AC6920A04AEE00F0A6D3 /* ExampleBlockMRCVC.m */,
+			);
+			path = MRC;
+			sourceTree = "<group>";
+		};
+		DA40930820946B4A00E19591 /* 引用计数 */ = {
+			isa = PBXGroup;
+			children = (
+				DA8D1170209987F7009D9FC8 /* 总纲 */,
+				DA17AC2420A02FE200F0A6D3 /* 引用计数数值例题 */,
+				DA17AC2320A02FD500F0A6D3 /* 关键字比较 */,
+				DA17AC1D20A02FCC00F0A6D3 /*  ARC所有权修饰符研究 */,
+				DA40933D209477CF00E19591 /* 内存管理规则 */,
+				DA17AC0720A02F3100F0A6D3 /* 自动释放池探究 */,
+			);
+			path = "引用计数";
+			sourceTree = "<group>";
+		};
+		DA40930920946B4A00E19591 /* others */ = {
+			isa = PBXGroup;
+			children = (
+				DA72C5F420A5338000E97886 /* 混编swift相关文件 */,
+				DA593E1220A45110000DE345 /* 内存管理相关资料(图片:xmind等) */,
+				DA16977B209B077600237589 /* MemoryManagementVC.h */,
+				DA16977A209B077600237589 /* MemoryManagementVC.m */,
+				DA169778209B077600237589 /* NSObject的mm文件源码.h */,
+				DA169779209B077600237589 /* NSObject的mm文件源码.mm */,
+				DA169777209B068500237589 /* Header.h */,
+				DA169774209B05A700237589 /* MemoryConst.h */,
+				DA169775209B05A700237589 /* MemoryConst.m */,
+				DA40930B20946B4A00E19591 /* AppDelegate.h */,
+				DA40931820946B4A00E19591 /* AppDelegate.m */,
+				DA40930E20946B4A00E19591 /* Dog.h */,
+				DA40931920946B4A00E19591 /* Dog.m */,
+				DA40930F20946B4A00E19591 /* Assets.xcassets */,
+				DA40931420946B4A00E19591 /* HighCopyAutorealeasePool.h */,
+				DA40930A20946B4A00E19591 /* HighCopyAutorealeasePool.mm */,
+				DA40931620946B4A00E19591 /* main.m */,
+				DA16976D209AF12100237589 /* Memory-Prefix.pch */,
+			);
+			path = others;
+			sourceTree = "<group>";
+		};
+		DA40932C20946CBC00E19591 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DA4093382094706500E19591 /* WaterRippleView.h */,
+				DA4093372094706400E19591 /* WaterRippleView.m */,
+				DA40932D20946D0C00E19591 /* DemoNavigationController.h */,
+				DA40932E20946D0C00E19591 /* DemoNavigationController.m */,
+				DA40933020946D4000E19591 /* DemoListTableVC.h */,
+				DA40933120946D4000E19591 /* DemoListTableVC.m */,
+				DA40933420946DB100E19591 /* DemoConfigurationModel.h */,
+				DA40933520946DB100E19591 /* DemoConfigurationModel.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DA40933D209477CF00E19591 /* 内存管理规则 */ = {
+			isa = PBXGroup;
+			children = (
+				DA40933E2094795E00E19591 /* MemoryManagementRulesController.h */,
+				DA40933F2094795E00E19591 /* MemoryManagementRulesController.m */,
+			);
+			path = "内存管理规则";
+			sourceTree = "<group>";
+		};
+		DA55A86A20AD18CB0044ED5A /* 启动性能优化 */ = {
+			isa = PBXGroup;
+			children = (
+				DA55A86B20AD19D00044ED5A /* StartupPerformanceVC.h */,
+				DA55A86C20AD19D00044ED5A /* StartupPerformanceVC.m */,
+			);
+			path = "启动性能优化";
+			sourceTree = "<group>";
+		};
+		DA593E1220A45110000DE345 /* 内存管理相关资料(图片:xmind等) */ = {
+			isa = PBXGroup;
+			children = (
+				DA593E1320A45110000DE345 /* suipianhua.png */,
+				DA593E1420A45110000DE345 /* 内存管理-引用计数.xmind */,
+				DA593E1520A45110000DE345 /* ShowMemory.png */,
+				DA593E1620A45110000DE345 /* yinyongjishubiao.png */,
+				DA593E1720A45110000DE345 /* autoreleaseReturnValue.png */,
+				DA593E1820A45110000DE345 /* 内存管理.xmind */,
+			);
+			path = "内存管理相关资料(图片:xmind等)";
+			sourceTree = "<group>";
+		};
+		DA5AABC3230A7C8000925A7C /* 无限滚动的tableView */ = {
+			isa = PBXGroup;
+			children = (
+				DA5AABD7230AADC800925A7C /* NSArray+WJExtension.h */,
+				DA5AABD8230AADC800925A7C /* NSArray+WJExtension.m */,
+				DA5AABD4230A7D9E00925A7C /* NSMutableArray+WJExtension.h */,
+				DA5AABD2230A7D9C00925A7C /* NSMutableArray+WJExtension.m */,
+				DA5AABD1230A7D9C00925A7C /* NSMutableDictionary+WJExtension.h */,
+				DA5AABD3230A7D9D00925A7C /* NSMutableDictionary+WJExtension.m */,
+				DA5AABCA230A7C8000925A7C /* UILabel+WJFastUIKit.h */,
+				DA5AABC4230A7C8000925A7C /* UILabel+WJFastUIKit.m */,
+				DA5AABC5230A7C8000925A7C /* UIView+WJFastUIKit.h */,
+				DA5AABC9230A7C8000925A7C /* UIView+WJFastUIKit.m */,
+				DA5AABC7230A7C8000925A7C /* WJCycleCell.h */,
+				DA5AABCC230A7C8000925A7C /* WJCycleCell.m */,
+				DA5AABCB230A7C8000925A7C /* WJCycleTableView.h */,
+				DA5AABC8230A7C8000925A7C /* WJCycleTableView.m */,
+				DA5AABC6230A7C8000925A7C /* WJFastUIKit.h */,
+				DA5AABDA230BDD2400925A7C /* WJCycleTableViewController.h */,
+				DA5AABDB230BDD2400925A7C /* WJCycleTableViewController.m */,
+			);
+			path = "无限滚动的tableView";
+			sourceTree = "<group>";
+		};
+		DA6AD26720C51A6F0039E840 /* 下拉刷新 */ = {
+			isa = PBXGroup;
+			children = (
+				DA6AD26920C51AC00039E840 /* oc版-下拉刷新 */,
+				DA6AD26820C51AC00039E840 /* swift版-下拉刷新 */,
+			);
+			name = "下拉刷新";
+			path = "内存管理实例/下拉刷新";
+			sourceTree = SOURCE_ROOT;
+		};
+		DA6AD26820C51AC00039E840 /* swift版-下拉刷新 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "swift版-下拉刷新";
+			sourceTree = "<group>";
+		};
+		DA6AD26920C51AC00039E840 /* oc版-下拉刷新 */ = {
+			isa = PBXGroup;
+			children = (
+				DA6AD26A20C51AE30039E840 /* UIScrollView+WJRefresh.h */,
+				DA6AD26B20C51AE30039E840 /* UIScrollView+WJRefresh.m */,
+				DA6AD26D20C51B100039E840 /* WJRefreshHeader.h */,
+				DA6AD26E20C51B100039E840 /* WJRefreshHeader.m */,
+				DA6AD27020C51B400039E840 /* WJRefresh.h */,
+				DA6AD27120C53F230039E840 /* UIView+WJFrame.h */,
+				DA6AD27220C53F230039E840 /* UIView+WJFrame.m */,
+				DA49AD5C20C663E800E13030 /* UIScrollView+WJFrame.h */,
+				DA49AD5D20C663E800E13030 /* UIScrollView+WJFrame.m */,
+			);
+			path = "oc版-下拉刷新";
+			sourceTree = "<group>";
+		};
+		DA72C5F420A5338000E97886 /* 混编swift相关文件 */ = {
+			isa = PBXGroup;
+			children = (
+				DA49AD6420C67A6600E13030 /* EditNameOrNicknameVC.swift */,
+				DA49AD6320C67A6600E13030 /* EditNameOrNicknameVC.xib */,
+				DA56396D20AAADF500CAD610 /* 内存管理实例-Bridging-Header.h */,
+				DA56396820AAADF400CAD610 /* ClosureVC.swift */,
+				DA56396520AAADF300CAD610 /* InteractionVC.swift */,
+				DA56396A20AAADF400CAD610 /* ShowAllVC.swift */,
+				DA56396C20AAADF500CAD610 /* ShowSwiftDataCell.swift */,
+				DA56396B20AAADF400CAD610 /* ShowSwiftDataCell.xib */,
+				DA56396920AAADF400CAD610 /* ShowSwiftDataVC.swift */,
+				DA56396620AAADF300CAD610 /* TestCallBackVC.swift */,
+				DA56396720AAADF400CAD610 /* UnownedAndWeakVC.swift */,
+			);
+			path = "混编swift相关文件";
+			sourceTree = "<group>";
+		};
+		DA74EC7A20874A98007A9D50 = {
+			isa = PBXGroup;
+			children = (
+				DA74EC8520874A98007A9D50 /* 内存管理实例 */,
+				DA74EC9E20874A9B007A9D50 /* 内存管理实例Tests */,
+				DA74ECA920874A9B007A9D50 /* 内存管理实例UITests */,
+				DA74EC8420874A98007A9D50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA74EC8420874A98007A9D50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA74EC8320874A98007A9D50 /* 内存管理实例.app */,
+				DA74EC9B20874A9B007A9D50 /* 内存管理实例Tests.xctest */,
+				DA74ECA620874A9B007A9D50 /* 内存管理实例UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA74EC8520874A98007A9D50 /* 内存管理实例 */ = {
+			isa = PBXGroup;
+			children = (
+				DA5AABC3230A7C8000925A7C /* 无限滚动的tableView */,
+				DA81FAE520AE710700341EB2 /* 探索SwipeTableView */,
+				DA40932C20946CBC00E19591 /* Main */,
+				DA55A86A20AD18CB0044ED5A /* 启动性能优化 */,
+				DA17AC3A20A0412100F0A6D3 /* Blocks */,
+				DA40930820946B4A00E19591 /* 引用计数 */,
+				DA40930920946B4A00E19591 /* others */,
+				DA40931A20946B4A00E19591 /* Info.plist */,
+			);
+			path = "内存管理实例";
+			sourceTree = "<group>";
+		};
+		DA74EC9E20874A9B007A9D50 /* 内存管理实例Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DA74EC9F20874A9B007A9D50 /* ______Tests.m */,
+				DA74ECA120874A9B007A9D50 /* Info.plist */,
+			);
+			path = "内存管理实例Tests";
+			sourceTree = "<group>";
+		};
+		DA74ECA920874A9B007A9D50 /* 内存管理实例UITests */ = {
+			isa = PBXGroup;
+			children = (
+				DA74ECAA20874A9B007A9D50 /* ______UITests.m */,
+				DA74ECAC20874A9B007A9D50 /* Info.plist */,
+			);
+			path = "内存管理实例UITests";
+			sourceTree = "<group>";
+		};
+		DA81FAE520AE710700341EB2 /* 探索SwipeTableView */ = {
+			isa = PBXGroup;
+			children = (
+				DA6AD26720C51A6F0039E840 /* 下拉刷新 */,
+				DA81FB4520AEA0E700341EB2 /* 模拟SwipeTableView */,
+				DA81FB2620AE768500341EB2 /* 使用SwipeTableView */,
+				DA81FB3320AE768600341EB2 /* STController */,
+				DA81FB2C20AE768500341EB2 /* STRefresh */,
+				DA81FB2920AE768500341EB2 /* STTransition */,
+				DA81FB1F20AE768500341EB2 /* STView */,
+				DA81FAE620AE710700341EB2 /* SwipeTableView */,
+			);
+			path = "探索SwipeTableView";
+			sourceTree = "<group>";
+		};
+		DA81FAE620AE710700341EB2 /* SwipeTableView */ = {
+			isa = PBXGroup;
+			children = (
+				DA81FAEF20AE710700341EB2 /* UIView+STFrame.h */,
+				DA81FAEA20AE710700341EB2 /* UIView+STFrame.m */,
+				DA81FAE920AE710700341EB2 /* STCollectionView.h */,
+				DA81FAEC20AE710700341EB2 /* STCollectionView.m */,
+				DA81FAE820AE710700341EB2 /* STHeaderView.h */,
+				DA81FAED20AE710700341EB2 /* STHeaderView.m */,
+				DA81FAEE20AE710700341EB2 /* SwipeTableView.h */,
+				DA81FAE720AE710700341EB2 /* SwipeTableView.m */,
+			);
+			path = SwipeTableView;
+			sourceTree = "<group>";
+		};
+		DA81FB1F20AE768500341EB2 /* STView */ = {
+			isa = PBXGroup;
+			children = (
+				DA81FB2020AE768500341EB2 /* CustomSegmentControl.h */,
+				DA81FB2120AE768500341EB2 /* CustomTableView.m */,
+				DA81FB2220AE768500341EB2 /* CustomCollectionView.h */,
+				DA81FB2320AE768500341EB2 /* CustomTableView.h */,
+				DA81FB2420AE768500341EB2 /* CustomSegmentControl.m */,
+				DA81FB2520AE768500341EB2 /* CustomCollectionView.m */,
+			);
+			path = STView;
+			sourceTree = "<group>";
+		};
+		DA81FB2620AE768500341EB2 /* 使用SwipeTableView */ = {
+			isa = PBXGroup;
+			children = (
+				DA468D8D20B653A500DC649F /* TestSwiftSwipeTableViewVC.swift */,
+				DA81FB2820AE768500341EB2 /* TestSwipeTableViewVC.h */,
+				DA81FB2720AE768500341EB2 /* TestSwipeTableViewVC.m */,
+				DA67AB9020BE7DA1007CEF0B /* TestRuntimeVC.h */,
+				DA67AB9120BE7DA1007CEF0B /* TestRuntimeVC.m */,
+				DA67AB9620BE7EDF007CEF0B /* NSObject+runtime.h */,
+				DA67AB9720BE7EDF007CEF0B /* NSObject+runtime.m */,
+				DA83C91920C13AE900D9141A /* EndScrollViewTool.h */,
+				DA83C91A20C13AE900D9141A /* EndScrollViewTool.m */,
+			);
+			path = "使用SwipeTableView";
+			sourceTree = "<group>";
+		};
+		DA81FB2920AE768500341EB2 /* STTransition */ = {
+			isa = PBXGroup;
+			children = (
+				DA81FB2A20AE768500341EB2 /* STTransitions.m */,
+				DA81FB2B20AE768500341EB2 /* STTransitions.h */,
+			);
+			path = STTransition;
+			sourceTree = "<group>";
+		};
+		DA81FB2C20AE768500341EB2 /* STRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				DA81FB3220AE768500341EB2 /* UIScrollView+STRefresh.h */,
+				DA81FB2D20AE768500341EB2 /* UIScrollView+STRefresh.m */,
+				DA81FB3120AE768500341EB2 /* STRefreshHeader.h */,
+				DA81FB2E20AE768500341EB2 /* STRefreshHeader.m */,
+				DA81FB2F20AE768500341EB2 /* STRefresh.h */,
+				DA81FB3020AE768500341EB2 /* github.png */,
+			);
+			path = STRefresh;
+			sourceTree = "<group>";
+		};
+		DA81FB3320AE768600341EB2 /* STController */ = {
+			isa = PBXGroup;
+			children = (
+				DA81FB3420AE768600341EB2 /* STImageController.h */,
+				DA81FB3720AE768600341EB2 /* STImageController.m */,
+				DA81FB3620AE768600341EB2 /* STListController.m */,
+				DA81FB3820AE768600341EB2 /* STListController.h */,
+				DA81FB3920AE768600341EB2 /* STViewController.h */,
+				DA81FB3520AE768600341EB2 /* STViewController.m */,
+			);
+			path = STController;
+			sourceTree = "<group>";
+		};
+		DA81FB4520AEA0E700341EB2 /* 模拟SwipeTableView */ = {
+			isa = PBXGroup;
+			children = (
+				DA81FB4C20AEA82400341EB2 /* WJSwipeTableView.swift */,
+				DA81FB4E20AEA83100341EB2 /* WJHeaderView.swift */,
+				DA81FB5220AEC92700341EB2 /* WJSegmentView.swift */,
+				DA55826520BBA8EE0016EE0C /* WJDynamicItem.swift */,
+				DA54923E20BD2FF100E433DB /* WJBaseMoveView.swift */,
+			);
+			path = "模拟SwipeTableView";
+			sourceTree = "<group>";
+		};
+		DA8D1170209987F7009D9FC8 /* 总纲 */ = {
+			isa = PBXGroup;
+			children = (
+				DA8D11712099881E009D9FC8 /* ShowAboutVC.h */,
+				DA8D11722099881E009D9FC8 /* ShowAboutVC.m */,
+			);
+			path = "总纲";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA74EC8220874A98007A9D50 /* 内存管理实例 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA74ECAF20874A9B007A9D50 /* Build configuration list for PBXNativeTarget "内存管理实例" */;
+			buildPhases = (
+				DA74EC7F20874A98007A9D50 /* Sources */,
+				DA74EC8020874A98007A9D50 /* Frameworks */,
+				DA74EC8120874A98007A9D50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "内存管理实例";
+			productName = "内存管理实例";
+			productReference = DA74EC8320874A98007A9D50 /* 内存管理实例.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DA74EC9A20874A9B007A9D50 /* 内存管理实例Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA74ECB220874A9B007A9D50 /* Build configuration list for PBXNativeTarget "内存管理实例Tests" */;
+			buildPhases = (
+				DA74EC9720874A9B007A9D50 /* Sources */,
+				DA74EC9820874A9B007A9D50 /* Frameworks */,
+				DA74EC9920874A9B007A9D50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA74EC9D20874A9B007A9D50 /* PBXTargetDependency */,
+			);
+			name = "内存管理实例Tests";
+			productName = "内存管理实例Tests";
+			productReference = DA74EC9B20874A9B007A9D50 /* 内存管理实例Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DA74ECA520874A9B007A9D50 /* 内存管理实例UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA74ECB520874A9B007A9D50 /* Build configuration list for PBXNativeTarget "内存管理实例UITests" */;
+			buildPhases = (
+				DA74ECA220874A9B007A9D50 /* Sources */,
+				DA74ECA320874A9B007A9D50 /* Frameworks */,
+				DA74ECA420874A9B007A9D50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA74ECA820874A9B007A9D50 /* PBXTargetDependency */,
+			);
+			name = "内存管理实例UITests";
+			productName = "内存管理实例UITests";
+			productReference = DA74ECA620874A9B007A9D50 /* 内存管理实例UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA74EC7B20874A98007A9D50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "汪俊";
+				TargetAttributes = {
+					DA74EC8220874A98007A9D50 = {
+						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
+					};
+					DA74EC9A20874A9B007A9D50 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = DA74EC8220874A98007A9D50;
+					};
+					DA74ECA520874A9B007A9D50 = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = DA74EC8220874A98007A9D50;
+					};
+				};
+			};
+			buildConfigurationList = DA74EC7E20874A98007A9D50 /* Build configuration list for PBXProject "内存管理实例" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DA74EC7A20874A98007A9D50;
+			productRefGroup = DA74EC8420874A98007A9D50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA74EC8220874A98007A9D50 /* 内存管理实例 */,
+				DA74EC9A20874A9B007A9D50 /* 内存管理实例Tests */,
+				DA74ECA520874A9B007A9D50 /* 内存管理实例UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA74EC8120874A98007A9D50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA593E1A20A45110000DE345 /* 内存管理-引用计数.xmind in Resources */,
+				DA593E1B20A45110000DE345 /* ShowMemory.png in Resources */,
+				DA593E1C20A45110000DE345 /* yinyongjishubiao.png in Resources */,
+				DA56397420AAADF500CAD610 /* ShowSwiftDataCell.xib in Resources */,
+				DA40931D20946B4A00E19591 /* Assets.xcassets in Resources */,
+				DA593E1920A45110000DE345 /* suipianhua.png in Resources */,
+				DA593E1D20A45110000DE345 /* autoreleaseReturnValue.png in Resources */,
+				DA49AD6520C67A6600E13030 /* EditNameOrNicknameVC.xib in Resources */,
+				DA593E1E20A45110000DE345 /* 内存管理.xmind in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA74EC9920874A9B007A9D50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA74ECA420874A9B007A9D50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA74EC7F20874A98007A9D50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA81FB3B20AE783F00341EB2 /* TestSwipeTableViewVC.m in Sources */,
+				DA81FB3C20AE783F00341EB2 /* STViewController.m in Sources */,
+				DA81FB3D20AE783F00341EB2 /* STListController.m in Sources */,
+				DA81FB3E20AE783F00341EB2 /* STImageController.m in Sources */,
+				DA81FB3F20AE783F00341EB2 /* UIScrollView+STRefresh.m in Sources */,
+				DA81FB4020AE783F00341EB2 /* STRefreshHeader.m in Sources */,
+				DA5AABCD230A7C8000925A7C /* UILabel+WJFastUIKit.m in Sources */,
+				DA81FB4120AE783F00341EB2 /* STTransitions.m in Sources */,
+				DA67AB9820BE7EDF007CEF0B /* NSObject+runtime.m in Sources */,
+				DA81FB4220AE783F00341EB2 /* CustomTableView.m in Sources */,
+				DA81FB4320AE783F00341EB2 /* CustomSegmentControl.m in Sources */,
+				DA5AABDC230BDD2400925A7C /* WJCycleTableViewController.m in Sources */,
+				DA81FB4420AE783F00341EB2 /* CustomCollectionView.m in Sources */,
+				DA56397120AAADF500CAD610 /* ClosureVC.swift in Sources */,
+				DA468D8E20B653A500DC649F /* TestSwiftSwipeTableViewVC.swift in Sources */,
+				DA81FAF220AE710700341EB2 /* UIView+STFrame.m in Sources */,
+				DA67AB9220BE7DA1007CEF0B /* TestRuntimeVC.m in Sources */,
+				DA81FB4D20AEA82400341EB2 /* WJSwipeTableView.swift in Sources */,
+				DA5AABD5230A7D9E00925A7C /* NSMutableArray+WJExtension.m in Sources */,
+				DA56397220AAADF500CAD610 /* ShowSwiftDataVC.swift in Sources */,
+				DA17AC1820A02F3100F0A6D3 /* ARCAutoReleaseViewController.m in Sources */,
+				DA56396E20AAADF500CAD610 /* InteractionVC.swift in Sources */,
+				DA6AD26F20C51B100039E840 /* WJRefreshHeader.m in Sources */,
+				DA17AC5C20A0460400F0A6D3 /* BlockStorageMRCVC.m in Sources */,
+				DA40932F20946D0C00E19591 /* DemoNavigationController.m in Sources */,
+				DA17AC5F20A0482F00F0A6D3 /* BlockStorageARCVC.m in Sources */,
+				DA17AC2720A0304800F0A6D3 /* ReferenceCountVC.m in Sources */,
+				DA4093392094706500E19591 /* WaterRippleView.m in Sources */,
+				DA81FAF420AE710700341EB2 /* STCollectionView.m in Sources */,
+				DA17AC6D20A04B2200F0A6D3 /* ExampleBlockARCVC.m in Sources */,
+				DA17AC5420A0444000F0A6D3 /* BlockAchieveVC.m in Sources */,
+				DA17AC1720A02F3100F0A6D3 /* AutoReleaseMemoryViewController.m in Sources */,
+				DA5AABCE230A7C8000925A7C /* WJCycleTableView.m in Sources */,
+				DA5AABD6230A7D9E00925A7C /* NSMutableDictionary+WJExtension.m in Sources */,
+				DA40932320946B4A00E19591 /* Dog.m in Sources */,
+				DA5AABCF230A7C8000925A7C /* UIView+WJFastUIKit.m in Sources */,
+				DA83C91B20C13AE900D9141A /* EndScrollViewTool.m in Sources */,
+				DA49AD6620C67A6600E13030 /* EditNameOrNicknameVC.swift in Sources */,
+				DA40932020946B4A00E19591 /* main.m in Sources */,
+				DA55A86D20AD19D00044ED5A /* StartupPerformanceVC.m in Sources */,
+				DA5AABD0230A7C8000925A7C /* WJCycleCell.m in Sources */,
+				DA17AC2D20A0308F00F0A6D3 /* ARCOwnershipListVC.m in Sources */,
+				DA17AC4720A0420A00F0A6D3 /* InterceptedVariableVC.m in Sources */,
+				DA17AC1B20A02F3100F0A6D3 /* Person.m in Sources */,
+				DA16977D209B077600237589 /* MemoryManagementVC.m in Sources */,
+				DA40931B20946B4A00E19591 /* HighCopyAutorealeasePool.mm in Sources */,
+				DA54923F20BD2FF100E433DB /* WJBaseMoveView.swift in Sources */,
+				DA40933220946D4000E19591 /* DemoListTableVC.m in Sources */,
+				DA55826620BBA8EE0016EE0C /* WJDynamicItem.swift in Sources */,
+				DA17AC2A20A0306400F0A6D3 /* AttributesCompareVC.m in Sources */,
+				DA17AC5120A0433000F0A6D3 /* InterceptedObjectsMRCVC.m in Sources */,
+				DA5AABD9230AADC800925A7C /* NSArray+WJExtension.m in Sources */,
+				DA17AC1A20A02F3100F0A6D3 /* Animal.m in Sources */,
+				DA169776209B05A700237589 /* MemoryConst.m in Sources */,
+				DA6AD27320C53F230039E840 /* UIView+WJFrame.m in Sources */,
+				DA17AC3920A030F900F0A6D3 /* ARCOwnershipAutoUnRetainedVC.m in Sources */,
+				DA40932220946B4A00E19591 /* AppDelegate.m in Sources */,
+				DA49AD5E20C663E800E13030 /* UIScrollView+WJFrame.m in Sources */,
+				DA8D11732099881E009D9FC8 /* ShowAboutVC.m in Sources */,
+				DA17AC4420A041CB00F0A6D3 /* BlockSyntaxVC.m in Sources */,
+				DA17AC3320A030C100F0A6D3 /* ARCOwnershipAutoStrongVC.m in Sources */,
+				DA56396F20AAADF500CAD610 /* TestCallBackVC.swift in Sources */,
+				DA17AC5720A044C700F0A6D3 /* BlockVariableVC.m in Sources */,
+				DA17AC1C20A02F3100F0A6D3 /* MRCAutoReleaseViewController.m in Sources */,
+				DA40933620946DB100E19591 /* DemoConfigurationModel.m in Sources */,
+				DA16977C209B077600237589 /* NSObject的mm文件源码.mm in Sources */,
+				DA56397520AAADF500CAD610 /* ShowSwiftDataCell.swift in Sources */,
+				DA56397320AAADF500CAD610 /* ShowAllVC.swift in Sources */,
+				DA17AC4E20A042B200F0A6D3 /* MyClazz.m in Sources */,
+				DA81FAF120AE710700341EB2 /* SwipeTableView.m in Sources */,
+				DA17AC3020A030A800F0A6D3 /* ARCOwnershipAutoReleaseVC.m in Sources */,
+				DA6AD26C20C51AE30039E840 /* UIScrollView+WJRefresh.m in Sources */,
+				DA4093402094795E00E19591 /* MemoryManagementRulesController.m in Sources */,
+				DA81FB4F20AEA83100341EB2 /* WJHeaderView.swift in Sources */,
+				DA81FB5320AEC92700341EB2 /* WJSegmentView.swift in Sources */,
+				DA17AC6A20A04AEE00F0A6D3 /* ExampleBlockMRCVC.m in Sources */,
+				DA17AC3620A030D700F0A6D3 /* ARCOwnershipAutoWeakVC.m in Sources */,
+				DA56397020AAADF500CAD610 /* UnownedAndWeakVC.swift in Sources */,
+				DA17AC4B20A0427200F0A6D3 /* InterceptedObjectsVC.m in Sources */,
+				DA81FAF520AE710700341EB2 /* STHeaderView.m in Sources */,
+				DA17AC1920A02F3100F0A6D3 /* NSObject+Category.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA74EC9720874A9B007A9D50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA74ECA020874A9B007A9D50 /* ______Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA74ECA220874A9B007A9D50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA74ECAB20874A9B007A9D50 /* ______UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DA74EC9D20874A9B007A9D50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA74EC8220874A98007A9D50 /* 内存管理实例 */;
+			targetProxy = DA74EC9C20874A9B007A9D50 /* PBXContainerItemProxy */;
+		};
+		DA74ECA820874A9B007A9D50 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DA74EC8220874A98007A9D50 /* 内存管理实例 */;
+			targetProxy = DA74ECA720874A9B007A9D50 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DA74ECAD20874A9B007A9D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DA74ECAE20874A9B007A9D50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA74ECB020874A9B007A9D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2VHMZAJUND;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/内存管理实例/others/Memory-Prefix.pch";
+				INFOPLIST_FILE = "内存管理实例/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qingqing.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/内存管理实例/others/混编swift相关文件/内存管理实例-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DA74ECB120874A9B007A9D50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2VHMZAJUND;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/内存管理实例/others/Memory-Prefix.pch";
+				INFOPLIST_FILE = "内存管理实例/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qingqing.------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/内存管理实例/others/混编swift相关文件/内存管理实例-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DA74ECB320874A9B007A9D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "内存管理实例Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qingqing.------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/内存管理实例.app/内存管理实例";
+			};
+			name = Debug;
+		};
+		DA74ECB420874A9B007A9D50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "内存管理实例Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qingqing.------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/内存管理实例.app/内存管理实例";
+			};
+			name = Release;
+		};
+		DA74ECB620874A9B007A9D50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "内存管理实例UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qingqing.------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "内存管理实例";
+			};
+			name = Debug;
+		};
+		DA74ECB720874A9B007A9D50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "内存管理实例UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.qingqing.------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "内存管理实例";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA74EC7E20874A98007A9D50 /* Build configuration list for PBXProject "内存管理实例" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA74ECAD20874A9B007A9D50 /* Debug */,
+				DA74ECAE20874A9B007A9D50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA74ECAF20874A9B007A9D50 /* Build configuration list for PBXNativeTarget "内存管理实例" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA74ECB020874A9B007A9D50 /* Debug */,
+				DA74ECB120874A9B007A9D50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA74ECB220874A9B007A9D50 /* Build configuration list for PBXNativeTarget "内存管理实例Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA74ECB320874A9B007A9D50 /* Debug */,
+				DA74ECB420874A9B007A9D50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA74ECB520874A9B007A9D50 /* Build configuration list for PBXNativeTarget "内存管理实例UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA74ECB620874A9B007A9D50 /* Debug */,
+				DA74ECB720874A9B007A9D50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA74EC7B20874A98007A9D50 /* Project object */;
+}
